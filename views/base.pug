@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    block head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      link(rel="stylesheet" href="/css/style.css")
+      link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+      title Blood-Bank | #{title}
+
+
+    body
+        include header
+        // Content
+        block content
+
+        //Footer
+        include footer
+
+        script(src="/js/donate.js")
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+
+
+

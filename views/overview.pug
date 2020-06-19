@@ -1,0 +1,16 @@
+extends base
+block content
+    .grid-container-me
+        each user in users
+            .grid-item-me
+                .card
+                    .card-body(style="background-color:red;")
+                        h1.card-title=user.name
+                        h4 Blood Group #{user.bloodGroup}
+                        p City Of donation #{user.city}
+                        a.card-link(href="#") Edit
+                        a.card-link(href="#") Delete
+
+
+
+

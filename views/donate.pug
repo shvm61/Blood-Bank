@@ -1,0 +1,26 @@
+extends base
+block content
+    .container.h-100(style="margin-top:55px;")
+        .row.h-100.justify-content-center.align-items-center
+            .col-10.col-md-8.col-lg-6
+                // Form
+                form.form-example
+                    h1 Blood Donation
+                    // Input fields
+                    .form-group
+                        label(for='name') Name:
+                        input#name.form-control.username(type='text' name='name')
+                    .form-group
+                        label(for='bloodgroup') Blood Group:
+                        input#bloodgroup.form-control.username(type='text' name='bloodgroup')
+                    .form-group
+                        label(for='city') City:
+                        input#city.form-control.username(type='text' name='city')
+                    .form-group
+                        label(for='amount') Amount:
+                        input#amount.form-control.username(type='number'  name='amount')
+                    .form-group
+                        label(for='phone') Contact:
+                        input#contact.form-control.username(type='text'  name='contact')
+                    button.btn.btn-primary.btn-customized(type='submit') Donate
+                   
